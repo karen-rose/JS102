@@ -60,5 +60,35 @@ var giveMatches = function(animalFarm) {
 };
 
 giveMatches(myFarm);
+
+var friends = [];
+friends.push(myFarm[0].username, myFarm[1].username);
+
+var relationships = [];
+relationships.friends = friends;
+
+var matches = [];
+relationships.matches = matches;
+relationships.matches.push('Bessy');
+
+for (var i = 0; i < myFarm.length; i++) {
+  myFarm[i].relationships = relationships;
+}
 console.log(myFarm);
-console.log(myFarm[0].matches[0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
